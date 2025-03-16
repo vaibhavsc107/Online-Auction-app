@@ -74,7 +74,7 @@ function AuctionItem() {
   if (!item) return <p>Loading auction details...</p>;
 
   return (
-    <div>
+    <div className='Bidding'>
       <h2>{item.itemName}</h2>
       <p>{item.description}</p>
       <p>Current Bid: ${item.currentBid}</p>
