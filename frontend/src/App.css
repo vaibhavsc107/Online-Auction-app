@@ -75,7 +75,13 @@ h2 {
 }
 
 .Bidding{
-  margin: 10px 20% 10px 20%;
+  margin: 10px 25% 10px 25%;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width:50%;
+  border: 1px solid black
 }
 
 

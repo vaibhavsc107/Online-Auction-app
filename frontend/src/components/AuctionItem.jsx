@@ -75,8 +75,8 @@ function AuctionItem() {
 
   return (
     <div className='Bidding'>
-      <h2>{item.itemName}</h2>
-      <p>{item.description}</p>
+      <h2>Item Name: {item.itemName}</h2>
+      <p>Item description: {item.description}</p>
       <p>Current Bid: ${item.currentBid}</p>
       <p>Highest Bidder: {item.highestBidder || 'No bids yet'}</p>
 
