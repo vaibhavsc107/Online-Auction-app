@@ -31,19 +31,21 @@ function Dashboard() {
   };
 
   return (
-    <div>
-      <h2>Auction Dashboard</h2>
+    <div className='dashboard'>
+      <h2>Dashboard</h2>
+      <div className='dashboard-link'>
+      <Link to="/post-auction">
+        <button>Post New Auction</button>
+      </Link>
 
       {/* 🔹 Logout Button  */}
       <button onClick={handleLogout}  style={{ marginLeft: '10px', background: 'red', color: 'white' }}>
         Logout
       </button>
-
-      <Link to="/post-auction">
-        <button>Post New Auction</button>
-      </Link>
+      </div>
 
       <ul>
+        <h2 style={{alignItems: 'center'}}>Bid</h2>
         {items.map((item) => (
           <li key={item._id}>
             <Link to={`/auction/${item._id}`}>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
-import Home from './components/Home';
-import Register from './components/Register';
-import Login from './components/Login';
+import Home from './pages/Home';
+import Register from './pages/Register';
+import Login from './pages/Login';
 import Dashboard from './components/Dashboard';
 import AuctionItem from './components/AuctionItem';
 import PostAuction from './components/PostAuction';
@@ -43,7 +43,7 @@ function App() {
             </>
           ) : (
             <>
-              <Link to="/home" className="nav-link">Home</Link>
+              <Link to="/" className="nav-link">Home</Link>
               <Link to="/dashboard" className="nav-link">Dashboard</Link>
               <Link to="/post-auction" className="nav-link">Post Auction</Link>
             </>
